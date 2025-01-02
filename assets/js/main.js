@@ -40,41 +40,27 @@ const blurHeader = () => {
 }
 
 /*=============== EMAIL JS ===============*/
-// const contactForm = document.getElementById('contact-form');
-// const contactMessage = document.getElementById('contact-message'); 
+const contactForm = document.getElementById('contact-form');
+const contactMessage = document.getElementById('contact-message');
 
-// const sendEmail = (e) => {
-//     e.preventDefault()
-// }
-// // ========== EMAIL JS CONTACT ==========
-// // Before proceeding, I recommend creating your EmailJs account(https://www.emailjs.com/)
+const sendEmail = (e) => {
+    e.preventDefault()
+    // // serviceID - templateID - #form - publicKey
+    emailjs.sendForm('service_fes9afn', 'template_j3u36me', '#contact-form', 'J6AP0JOZDlt0--Hm0')
+        .then(() => {
+            contactMessage.textContent = 'Message sent successfully ✅'
 
-// // // serviceID - templateID - #form - publicKey
+            setTimeout(()=>{
+                contactMessage.textContent = ''
+            }, 5000)
 
-// // 	// Show sent message
+            contactForm.reset()
+        }, () => {
+            contactMessage.textContent = 'Message not sent (service error) ❌'
+        })
+}
 
-// // 		Message sent successfully
-
-// // 	// Remove message after five seconds
-
-// // 	// Clear input fields
-
-// // 	// Show error message
-
-// // 		Message not sent (service error)
-
-
-// // * Copy this code into your (Email Template)
-
-// // Names: {{user_name}}
-
-// // Email: {{user_email}}
-
-// // Project: {{user_project}}
-
-// // Best wishes,
-// // EmailJS team
-// contactForm.addEventListener('submit', sendEmail);
+contactForm.addEventListener('submit', sendEmail);
 /*=============== SHOW SCROLL UP ===============*/
 
 const scrollUp = () => {
@@ -83,7 +69,7 @@ const scrollUp = () => {
     this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
         : scrollUp.classList.remove('show-scroll')
 }
-    window.addEventListener('scroll', scrollUp)
+window.addEventListener('scroll', scrollUp)
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
@@ -121,8 +107,8 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data, .home__social, .contact__container, .footer__container`)
-sr.reveal(`.home__image`, {origin: 'bottom'})
-sr.reveal(`.about__data, .skills__data `, {origin: 'left'})
-sr.reveal(`.about__image, .skills__content`, {origin: 'right'})
-sr.reveal(`.services__card, .projects__card`, {interval: 100})
+sr.reveal(`.home__image`, { origin: 'bottom' })
+sr.reveal(`.about__data, .skills__data `, { origin: 'left' })
+sr.reveal(`.about__image, .skills__content`, { origin: 'right' })
+sr.reveal(`.services__card, .projects__card`, { interval: 100 })
 
