@@ -2,7 +2,7 @@
 
 [Project Preview](https://simple-portfolio-tan-psi.vercel.app/)
 
-> **Acknowledgement**: This project was adapted from [Bedimcode's Responsive Portfolio Website tutorial](https://www.youtube.com/watch?v=27JtRAI3QO8) and their [GitHub repository](https://github.com/bedimcode/responsive-portfolio-website-patrick). Significant modifications have been made to the original work.
+> **Acknowledgement**: This project was adapted from [Bedimcode's Responsive Portfolio Website tutorial](https://youtu.be/Y4-xMb-eHOQ) and their [GitHub repository](https://github.com/bedimcode/responsive-portfolio-website-patrick). Significant modifications have been made to the original work.
 
 A modern, responsive portfolio website designed with a mobile-first approach, featuring smooth animations, dark theme, and contact form functionality.
 
