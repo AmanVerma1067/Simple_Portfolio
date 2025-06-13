@@ -1,6 +1,6 @@
 #  Responsive Portfolio Website
 
-![Project Preview](link)
+![Project Preview](https://simple-portfolio-tan-psi.vercel.app/)
 
 > **Acknowledgement**: This project was adapted from [Bedimcode's Responsive Portfolio Website tutorial](https://www.youtube.com/watch?v=27JtRAI3QO8) and their [GitHub repository](https://github.com/bedimcode/responsive-portfolio-website). Significant modifications have been made to the original work.
 
